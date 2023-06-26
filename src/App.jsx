@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 import "./App.css";
-import jobsData from "../public/data.json";
+import jobsData from "./data.json";
 
 const API_URL =
   "https://storage.googleapis.com/programiz-static/hiring/software/job-listing-page-challenge/data.json";
