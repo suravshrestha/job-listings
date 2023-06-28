@@ -6,6 +6,7 @@ import jobsData from "./data.json";
 
 import Filter from "./components/Filter";
 import Card from "./components/Card";
+import Loader from "./components/Loader";
 
 const API_URL =
   "https://storage.googleapis.com/programiz-static/hiring/software/job-listing-page-challenge/data.json";
@@ -35,7 +36,7 @@ function App() {
 
   return (
     <>
-      <h1 className="text-2xl font-bold">Jobs</h1>
+      <h1 className="text-3xl font-bold">Jobs</h1>
 
       {selectedKeywords.size > 0 && (
         <Filter
@@ -45,7 +46,7 @@ function App() {
       )}
 
       {loading ? (
-        <p>Loading...</p>
+        <Loader />
       ) : (
         jobs.map(
           (job, index) =>
