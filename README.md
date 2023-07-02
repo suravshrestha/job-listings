@@ -1,5 +1,5 @@
 # Job listings
-A web application for browsing job listings with the filtering capabilities.
+A web application for browsing job listings with filtering capabilities.
 
 ## Requirements
 - [Node.js](https://nodejs.org/en/)
